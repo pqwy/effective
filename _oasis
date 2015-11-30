@@ -1,0 +1,20 @@
+OASISFormat:  0.4
+Name:         effective
+Version:      0.0.1
+Synopsis:     XXX
+Authors:      David Kaloper <david@numm.org>
+Maintainers:  David Kaloper <david@numm.org>
+License:      FreeBSD
+Homepage:     https://github.com/pqwy/effective
+Plugins:      META (0.4), DevFiles (0.4)
+BuildTools:   ocamlbuild
+Description:  XXX
+OCamlVersion: >= 4.02.0
+AlphaFeatures: ocamlbuild_more_args
+
+Library effective
+  Path:         src/
+  Modules:      S, Eff, Stacked, Local, Univ
+  BuildDepends: higher
+  ByteOpt:         -w A-4-33-40-41-42-43-34-44
+
